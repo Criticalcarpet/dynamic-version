@@ -32,4 +32,4 @@ jobs:
           cache: 'npm'
       - run: |
           npm install
-          node index.js
+          node . ${{secrets.TOKEN}}

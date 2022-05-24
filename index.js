@@ -2,8 +2,12 @@ const { Octokit } = require("@octokit/rest");
 require("dotenv").config();
 const { version } = require("./test.json");
 
+
+const args = process.argv.slice(2);
+const token = args[0] ?? process.env.GITHUB_TOKEN;
+
 const octakit = new Octokit({
-  auth: process.env.GITHUB_TOKEN,
+  auth: token,
   userAgent: "Release Generator",
 });
 
