@@ -30,4 +30,6 @@ jobs:
         with:
           node-version: 16.x
           cache: 'npm'
-      - run: npm run release
+      - run: |
+          npm install
+          node index.js
