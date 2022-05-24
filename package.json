@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Criticalcarpet/dynamic-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Criticalcarpet/dynamic-version/issues"
+  },
+  "homepage": "https://github.com/Criticalcarpet/dynamic-version#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "dotenv": "^16.0.1"
+  }
+}
